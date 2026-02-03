@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      .my-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+  <script>
+    // Exemple simple : Afficher une alerte lorsque l'utilisateur clique sur un bouton
+
+    // Créer un bouton (nouvelle constante)
+    const button = document.createElement("button");
+
+    // Définir une classe CSS pour le bouton (propriété className)
+    button.className = "my-button";
+
+    // Définir le texte du bouton (propriété textContent)
+    button.textContent = "Click Me";
+
+    // Ajouter un gestionnaire d'événements pour le clic (callback function sur l'événement 'click')
+    button.addEventListener("click", () => {
+      alert("Hello JavaScript!");
+    });
+
+    // Ajouter le bouton au corps du document (méthode appendChild)
+    document.body.appendChild(button);
+  </script>
+</html>
