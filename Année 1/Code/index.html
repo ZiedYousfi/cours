@@ -7,13 +7,20 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        background-color: blueviolet;
         margin: 0;
         padding: 20px;
       }
 
+      .block {
+        background-color: rebeccapurple;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
       h1 {
-        color: blue;
+        color: white;
         text-align: center;
       }
 
@@ -37,16 +44,18 @@
     </style>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <img
-      src="https://rustacean.net/assets/rustacean-flat-happy.png"
-      alt="Rust > C oubliez pas"
-      width="300"
-      class="imgr"
-      onclick="window.location.href='https://doc.rust-lang.org/book'"
-    />
+    <div class="block">
+      <h1>Hello, World!</h1>
+      <img
+        src="https://rustacean.net/assets/rustacean-flat-happy.png"
+        alt="Rust > C oubliez pas"
+        width="300"
+        class="imgr"
+        onclick="window.location.href='https://doc.rust-lang.org/book'"
+      />
 
-    <button onclick="window.location.href='https://doc.rust-lang.org/book'" class="my-button" >La Bible</button>
+      <button onclick="window.location.href='https://doc.rust-lang.org/book'" class="my-button" >La Bible</button>
+    </div>
   </body>
   <script>
     // Exemple simple : Afficher une alerte lorsque l'utilisateur clique sur un bouton
